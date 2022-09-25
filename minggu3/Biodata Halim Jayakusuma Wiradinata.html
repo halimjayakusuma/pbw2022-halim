@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Data Diri Halim JW</title>
+    </head>
+    <body background="1053147.jpg">
+        <h1 align ="center">BIODATA MAHASISWA</h1>
+        <hr style="width:45%;height:3px;background-color:red;border:none;">
+        <div style="display: flex; justify-content: center">
+        <img src="CoCard1.jpg" alt="Foto Halim" style="width:200px;height:300px;border:5px double black;">
+        <table style="margin-left:50px;">
+            <tr>
+                <td>Nama</td>
+                <td>: Halim Jayakusuma Wiradinata</td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>: A11.2022.14044</td>
+            </tr>
+            <tr>
+                <td>Dosen Wali</td>
+                <td>: NURUL ANISA SRI WINARSIH, S.Kom, M.Cs</td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td>: Aktif</td>
+            </tr>
+            <tr>
+                <td>Alamat Semarang</td>
+                <td>: Jl. Wolter Monginsidi No. 27 Kel, RT.07/RW.04, Tlogosari Wetan, Kec. Pedurungan, Kota Semarang, Jawa Tengah 50196</td>
+            </tr>
+            <tr>
+                <td>Alamat asal</td>
+                <td>: Jl. Wolter Monginsidi No. 27 Kel, RT.07/RW.04, Tlogosari Wetan, Kec. Pedurungan, Kota Semarang, Jawa Tengah 50196</td>
+            </tr>
+            <tr>
+                <td>No HP</td>
+                <td>: 081390271315</td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td>: 111202214044@mhs.dinus.ac.id</td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>: Islam</td>
+            </tr>
+        </table>
+        </div>
+        <h2 align="center">Jadwal KRS</h2>
+        <table border="3" cellpadding="10" cellspacing="0" align="center" border="1">
+            <tr>
+                <td>No</td>
+                <td>Kode Mata Kuliah</td>
+                <td>Kelompok</td>
+                <td>Mata Kuliah</td>
+                <td>SKS</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>A11.54101</td>
+                <td>A11.4102</td>
+                <td>KALKULUS 1</td>
+                <td>4</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>A11.54105</td>
+                <td>A11.4102</td>
+                <td>DASAR PEMROGRAMAN</td>
+                <td>4</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>A11.54302</td>
+                <td>A11.4102</td>
+                <td>MATEMATIKA DISKRIT</td>
+                <td>3</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>A11.54314</td>
+                <td>A11.4102</td>
+                <td>PEMROGRAMAN BERBASIS WEB</td>
+                <td>2</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>A11.54403</td>
+                <td>A11.4102</td>
+                <td>ORGANISASI DAN ARSITEKTUR KOMPUTER</td>
+                <td>3</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>AF201704</td>
+                <td>A11.4102</td>
+                <td>DASAR-DASAR KOMPUTASI</td>
+                <td>2</td>
+                <td>B</td>
+            </tr>          
+        </table>
+    </body>
+    <body background="1053147.jpg">
+        <div style="background:aqua"><p align="center"><font size="20" color="blue">Multimedia Halim JW</font></p></div>
+        <h1 style="text-align:center" style="background-color:white">Video pada HTML 5</h1>
+        <p style="font-family: Helvetica">Halo perkenalkan nama saya Halim Jayakusuma Wiradinata dengan NIM : A11.2022.14044. Ini adalah laman WEB saya</p>
+            <button onclick="playVid()" type="button">Play Video</button>
+            <button onclick="pauseVid()" type="button">Pause Video</button>
+            <button onclick="myFunction()" type="button">Duration</button><br>
+            <video id ="myVideo" width="480" height="360" controls>
+            <source src="atlantis.mp4" type="video/mp4">
+            </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u0zqtYU-rJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        <p style="font-family: Helvetica">Ini adalah favorit lagu saya</p>
+        <audio controls>
+            <source src="payphone.mp3" type="audio/mpeg">
+          </audio>
+        <p style="font-family: Helvetica">Ini adalah contoh File PDF</p>
+        <iframe src="Minggu 3-Prakti.pdf" width="50%" height="500px">
+        </iframe>
+    </body>
+    <script>
+        var vid = document.getElementById("myVideo");
+
+        function playVid()  {
+            vid.play();
+        }
+        function pauseVid() {
+            vid.pause();
+        }
+        function myFunction() {
+            alert(vid.duration);
+        }
+    </script>
+</html>
