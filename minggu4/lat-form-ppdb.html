@@ -9,7 +9,7 @@
 <body>
     <h1 align="center">Formulir PPDB Jalur Zonasi Tahun 2022</h1>
         <form id="form1" name="form1" method="post" action="kirim.php">
-        <table style="width: 100px;" border="1px solid black" border-collapse="collapse">
+        <table border="1" frame="BOX" rules="NONE" border-radius="1" border-collapse="collapse">
         <tr>
             <td><b>Nomor</b></td>
             <td><b>INFO PENDAFTARAN</b></td>
@@ -27,7 +27,14 @@
         <tr>
             <td>3</td>
             <td>Tahun Lulus</td>
-            <td><input type="file" name="ffile"></td>
+            <td>
+                <select name="ftahunlulus">
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                </select>
+            </td>
         </tr>
         <tr>
             <td><b>DATA CALON PESERTA</b></td>
@@ -98,7 +105,66 @@
             <td><input type="number" name="fnkk"></td>
         </tr>
         <tr>
-            <td colspan="2" align="center"><input type="submit" name="fkirim" value="Kirim"></td>
+            <td>15</td>
+            <td>Nama Ayah Kandung</td>
+            <td><input type="text" name="fnakndg"></td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Agama</td>
+            <td>
+                <select name="fagama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Pekerjaan</td>
+            <td><input type="text" name="fpekerjaan"></td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Nama Ibu Kandung</td>
+            <td><input type="text" name="fnikndg"></td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Alamat Orang Tua</td>
+            <td><input type="text" name="faot"></td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Nama Ayah Kandung</td>
+            <td><input type="text" name="fnak"></td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Desa/Kel</td>
+            <td><input type="text" name="fdk"></td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Kecamatan</td>
+            <td><input type="text" name="fkcmtn"></td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Kabupaten</td>
+            <td><input type="text" name="fkbptn"></td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Provinsi</td>
+            <td><input type="text" name="fprvns"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" name="fkirim" value="SUBMIT HERE"></td>
         </tr>
     </table>
         </form>
