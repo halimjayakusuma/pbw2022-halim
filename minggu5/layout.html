@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Halim</title>
+	<style>
+			
+		.head1 {
+			font-size:40px;
+			color:#32b453;
+			font-weight:bold;
+		}
+		.head2 {
+			font-size:17px;
+			margin-left:10px;
+			margin-bottom:15px;
+		}
+		body {
+			margin: 0 auto;
+			background-position:center;
+			background-size: contain;
+		}
+	
+		.menu {
+			position: sticky;
+			top: 0;
+			background-color: #000000;
+			padding:10px 0px 10px 0px;
+			color:white;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.menu a {
+			float: left;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 20px;
+		}
+		.menu-log {
+			right: auto;
+			float: right;
+		}
+		footer {
+			width: 100%;
+			bottom: auto;
+			background-color: #000;
+			color: #fff;
+			position: absolute;
+			padding-top:20px;
+			padding-bottom:50px;
+			text-align:center;
+			font-size:30px;
+			font-weight:bold;
+		}
+		.body_sec {
+			margin-left:20px;
+		}	
+		details > summary {
+		padding: 4px;
+		width: 200px;
+		background-color: #eeeeee;
+		border: none;
+		box-shadow: 1px 1px 2px #bbbbbb;
+		cursor: pointer;
+		}
+
+		details > p {
+		background-color: #eeeeee;
+		padding: 4px;
+		margin: 0;
+		box-shadow: 1px 1px 2px #bbbbbb;
+		}
+		
+		
+
+	</style>
+</head>
+		
+<body>
+	
+	<!-- Header Section -->
+	<header>
+		
+		<div class="head1">Halim Jayakusuma Wiradinata</div>
+		<div class="head2">A11.2022.14044</div>
+	</header>
+	
+	<!-- Menu Navigation Bar -->
+	<nav class="menu">
+		<a href="#home">Minggu 5</a>
+	</nav>
+	
+	<!-- Body section -->
+	<h2><p><b><i>Time</i></b></p></h2>
+	<h1>
+		<p>Artikel ini ditulis pada <time datetime="2020-20-07">20 July 2020</time> <time>18:23</time>
+		</p>
+	</h1>
+	
+	<main class = "body_sec">
+		<section id="Content">
+			<p>Halo nama saya Halim Jayakusuma Wiradinata dengan NIM A11.2022.14044. Saya berasal dari Semarang, Jawa Tengah. Saat ini sedang kuliah di Universitas Dian Nuswantoro</p>
+		</section>
+	</main>
+	<br>
+	<!-- Summary.html Section -->
+	<h2>
+		<p><b><i>Summary</i></b></p>
+	</h2>
+	<h3>Jenis Gunung Api Berdasarkan Bentuk dan Terjadinya</h3>
+<details>
+  <summary>Gunung Api Maar</summary>
+  <p>Gunung api ini berbentuk seperti danau kawah. Proses terjadinya berasal dari letusan besar yang kemudian membentuk lubang besar di puncaknya.
+    Material yang dikeluarkan oleh gunung api maar adalah benda padat dan efflata, misalnya adalah Gunung Lamongan.
+    
+</p>
+</details>
+
+<details>
+    <summary>Gunung api kerucut/strato</summary>
+    <p>Gunung api kerucut adalah jenis gunung api yang paling sering dijumpai. Bentuk gunung api ini memang seperti kerucut dan punya lapisan lava serta abu yang berlapis-lapis. Gunung api strato terbentuk karena letusan serta lelehan batuan panas serta cair. Lelehan yang kerap terjadi inilah yang menyebabkan lereng berlapis dan disebut strato. Sebagian besar gunung api di Indonesia juga termasuk dalam gunung api kerucut, misalnya Gunung Merapi.
+	</p>
+  </details>
+
+  <details>
+    <summary>Gunung api perisai/tameng</summary>
+    <p>Gunung api perisai terbentuk karena lelehan yang keluar dari tekanan rendah. Sehingga, nyaris tidak ada letusan serta terbentuk lereng sangat landai yang kemiringannya 1 sampai 10 derajat. Akan tetapi, di Indonesia tidak ada gunung api jenis perisai. Contoh gunung api perisai/tameng adalah Gunung Maona Loa Hawaii yang ada di Amerika Serikat.
+	</p>
+  </details>
+
+  <!-- Audio.html Section -->
+  <h2><p><b><i>Audio</i></b></p></h2>
+    <audio controls>  
+        <source src="Cold.mp3" type="audio/mpeg">   
+        Browser tidak mendukung untuk menampilkan audio
+      </audio>  
+
+  	<!-- Audio2.html Section -->
+  	<h2><p><b><i>Audio 2 with button controls</i></b></p></h2>	  
+	  <button onclick="playAudio()" type="button">Play Audio</button>
+	  <button onclick="pauseAudio()" type="button">Pause Audio</button><br>
+	  <audio id ="myAudio" width="auto" height="auto" controls>
+	  <source src="glow like dat.mp3" type="video/mp4">
+	  </audio>	  
+
+	<!-- Script audio 2 Section -->
+	<script>
+    var x = document.getElementById("myAudio");
+
+	function playAudio() {
+  	x.play();
+	}
+
+	function pauseAudio() {
+	x.pause();
+	}
+    </script>
+
+	<!-- Video.html Section -->
+	<h2><p><b><i>Video</i></b></p></h2>
+	<video id ="myVideo" width="580" height="360" controls>
+		<source src="Soap.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+
+	<!-- Gif.html Section -->
+	<h2><p><b><i>Video GIF</i></b></p></h2>
+	<img src="programming.gif" alt="Computer man" style="width:96px;height:96px;"></body><br>
+
+	<!-- Video sub.html Section -->
+	<h2><p><b><i>Video Subtitles</i></b></p></h2>
+	<a href="./MIB2-subtitles-pt-BR.vtt" target="_blank"></a>
+    <video width="600" height="400" controls>
+      <source src="./MIB2.mp4" type="video/mp4">
+      <source src="./MIB2.webm" type="video/webm">
+      <track label="pt" kind="subtitles" srclang="pt" src="./MIB2-subtitles-pt-BR.vtt" default />
+    </video>
+
+	<!-- Video Youtube.html Section -->
+	<h2><p><b><i>Video YouTube</i></b></p></h2>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/9YffrCViTVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<!-- Footer Section -->
+	<footer>Designed by Halim Jayakusuma Wiradinata</footer>
+	
+</body>
+</html>
